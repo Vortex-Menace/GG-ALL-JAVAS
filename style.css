@@ -1,74 +1,79 @@
-/* Feel free to change any of the styling below!*/
+/* Set the font family and background color for the page */
 body {
-    text-align: center;
-
+font-family: Arial, sans-serif;
+background-color: #f7f7f7;
 }
 
-img {
-    width: 350px;
-}
-
+/* Style the title and opening image */
 .title {
-    font-size: 50px;
-    font-weight: 800;
+font-size: 36px;
+text-align: center;
+margin: 20px 0;
 }
 
-.buttons {
-    display: flex;
-    justify-content: center;
-
+.story-opening img {
+display: block;
+margin: 0 auto;
+max-width: 100%;
 }
 
-p {
-    font-size: 30px;
-    font-weight: 800;
-}
-
-
+/* Style the options buttons */
 button {
-    height: 40px;
+display: block;
+margin: 20px auto;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+font-size: 24px;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.2s ease-in-out;
 }
 
-
-h1 {
-    font-size: 25px;
-    color: black;
+button:hover {
+background-color: #333;
+color: #fff;
 }
 
-/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
-
-/* 
-.story-opening{
-   display:none;
+/* Hide the option screens by default */
+.option-one-screen,
+.option-two-screen,
+.option-one-end,
+.option-two-end {
+display: none;
 }
-*/
 
-/* 
-.buttons{
-   display:none;
+/* Style the option screens */
+.option-one-screen,
+.option-two-screen {
+text-align: center;
 }
-*/
 
-/* 
-.open-one-screen{
-   display:none;
+.option-one-screen img,
+.option-two-screen img {
+display: block;
+margin: 0 auto;
+max-width: 100%;
 }
-*/
 
-/* 
-.open-two-screen{
-   display:none;
+.option-one-screen h1,
+.option-two-screen h1 {
+font-size: 24px;
+margin-bottom: 20px;
 }
-*/
 
-/* 
-.open-one-end{
-   display:none;
+/* Style the end screens */
+.option-one-end h1,
+.option-two-end h1 {
+font-size: 30px;
+text-align: center;
+margin: 20px 0;
 }
-*/
 
-/* 
-.open-two-end{
-   display:none;
+.option-one-end img,
+.option-two-end img {
+display: block;
+margin: 0 auto;
+max-width: 80%;
+border-radius: 5px;
 }
-*/
